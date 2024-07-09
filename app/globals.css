@@ -1,33 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/*
+=========================================================
+colour configuration using native tailwind css colours
+=========================================================
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/** customized texts **/
+
+body{
+  font-family: Poppins;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.text--colors_default {
+  @apply text-slate-900 dark:text-white;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.text--colors_primary {
+  @apply  text-primary dark:text-primary;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.border--default{
+  @apply  border-borderLight dark:border-borderDark
+}
+
+/** customized backgrounds **/
+.bg--default {
+  @apply  bg-whiteBg dark:bg-blackBg;
+}
+
+.transition-700{
+  @apply transition duration-700
+}
+
+.text--header{
+  @apply text-headerLight dark:text-headerDark
+}
+
+.bg--card{
+  @apply bg-lightGreyBg dark:bg-greyBg;
+}
+
+.link--panel{
+  @apply  bg-[#dbdbdbbf] dark:bg-linkPanel
+}
+
+.gradient--default{
+  @apply bg-gradient-to-br from-borderLight via-eerieLight to-eerieLight dark:from-borderDark dark:via-eerieDark dark:to-eerieDark
+}
+
+.container {
+  @apply  w-[94%] max-w-[1220px] mx-auto
+}
+
+.info--before_default::before{
+  @apply content-normal absolute h-[45px] w-[45px] inset-[1px] rounded-xl -z-0 bg-white
+}
+/* .info--before_default::before{
+  @apply before:[] before:absolute before:h-[45px] before:w-[45px] before:inset-[1px] before:rounded-xl before:-z-0 before:bg-white
+} */
+
+.caps{
+  text-transform: uppercase;
+}
+.come {
+  color: #d6d6d6b2;
+  background:  linear-gradient( to right, #9f1fef, #5d19e6 );
 }
