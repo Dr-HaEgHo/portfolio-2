@@ -3,7 +3,7 @@ import About from "@/components/pages/About";
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
 import { useRouter, useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import Resume from "@/components/pages/Resume";
 
 const links = [
@@ -38,7 +38,8 @@ export default function Home() {
   })
 
   return (
-    <main className="min-h-screen  text--colors_default bg--default pb-[6rem]">
+    <Suspense>
+      <main className="min-h-screen  text--colors_default bg--default pb-[6rem]">
       <Navbar/>
       <div className="container">
         <div className="w-full flex items-start gap-[25px] relative">
@@ -70,5 +71,6 @@ export default function Home() {
         </div>
       </div>
     </main>
+    </Suspense>
   );
 }
