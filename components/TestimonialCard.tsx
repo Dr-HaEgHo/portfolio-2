@@ -15,7 +15,7 @@ const TestimonialCard:FC<expertiseProps> = ({data}) => {
                 <h4 className='text--colors_default text-lg font-bold z-[999]'>{data.name}</h4>
             </div> 
             <div className='w-full flex flex-col items-start gap-2 mt-6'> 
-                <h4 className='text--para_default text-[15px] z-[999]'>"{data.description}"</h4>
+                <h4 className='text--para_default text-[15px] z-[999]'>&quot;{data.description}&quot;</h4>
             </div> 
         </div> 
     )

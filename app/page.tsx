@@ -35,8 +35,7 @@ export default function Home() {
     else {
       handleRouting(localRoute)
     }
-    console.log("the local route: ",localRoute)
-  },[])
+  })
 
   return (
     <main className="min-h-screen  text--colors_default bg--default pb-[6rem]">
