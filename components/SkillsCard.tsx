@@ -11,7 +11,7 @@ const SkillsCard:FC<skillsProps> = ({data}) => {
                             <h4 className='text--colors_default text-[15px] font-[500] z-[999]'>{item.name}</h4>
                             <p className="text--colors_default font-normal">{item.percentage}%</p>
                         </div>
-                        <div className="w-full z-[999] h-2 bg-linkPanel">
+                        <div className="w-full z-[999] h-2 bg-linkPanel rounded-full">
                             <div style={{width: `${item.percentage}%`}} className="h-full rounded-full bg-gradient-to-r from-primary to-accent"/>
                         </div>
                     </div> 
