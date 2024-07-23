@@ -20,6 +20,7 @@ const EducationCard:FC<educationProps> = ({data}) => {
             {
                 data?.map((item) => (
                     <Events
+                        key={item.id}
                         title={item.school}
                         subtitle={`${item.course}, ${item.startDate} - ${item.endDate}`}
                         startDate="2020/12/02"

@@ -50,8 +50,8 @@ const Sidebar = () => {
             {/* Pills */}
             <div className='w-full flex flex-col items-center gap-1'>
                 {
-                    skills?.map((skill) => (
-                        <div className='link--panel rounded-lg'>
+                    skills?.map((skill, idx) => (
+                        <div key={idx} className='link--panel rounded-lg'>
                             <p className='text--color_default text-xs py-[5px] px-[18px] '>{skill}</p>
                         </div>
                     ))
@@ -67,7 +67,7 @@ const Sidebar = () => {
         <div className='w-full flex flex-col items-center gap-[30px] '>
             {
                 info?.map((data) => (
-                    <InfoComponent data={data}/>
+                    <InfoComponent key={data.id} data={data}/>
                 ))
             }
         </div>

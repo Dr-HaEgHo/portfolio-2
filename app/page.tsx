@@ -56,7 +56,7 @@ export default function Home() {
               <ul className="flex items-center gap link--panel  px-10 gap-[30px] border-b border-l rounded-bl-[20px] rounded-tr-[21px] border--default">
                 {
                   links?.map((link) => (
-                    <li onClick={() => handleRouting(link.route)} className="py-5 px-[7px] cursor-pointer"><p className={`text--colors_default  font-medium text-[15px] ${link.route === route && 'text--colors_primary'}`}>{link.name}</p></li>
+                    <li key={link.id} onClick={() => handleRouting(link.route)} className="py-5 px-[7px] cursor-pointer"><p className={`text--colors_default  font-medium text-[15px] ${link.route === route && 'text--colors_primary'}`}>{link.name}</p></li>
                   ))
                 }
               </ul>

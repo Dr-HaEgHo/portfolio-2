@@ -45,7 +45,7 @@ const About = () => {
             <h1 className='text--colors_default font-semibold text-[24px] mb-[10px]'>Expertise</h1>
             <div className='grid grid-cols-2 grid-rows-2 gap-5'>
                 {
-                    expertise?.map((item) => (<ExpertiseCard data={item}/>))
+                    expertise?.map((item) => (<ExpertiseCard key={item.id} data={item}/>))
                 }
             </div>
         </div>
@@ -68,16 +68,13 @@ const About = () => {
             >
                 {
                     testimonials?.map((item, idx) => (
-                    <SwiperSlide className='py-10 flex items-end'>
+                    <SwiperSlide key={idx} className='py-10 flex items-end'>
                         <TestimonialCard data={item} setModalOpen={setModalOpen}/>
                     </SwiperSlide>
                     ))
                 }
                 
             </Swiper> 
-                {/* {
-                    testimonials?.map((item) => (<TestimonialCard data={item} setModalOpen={setModalOpen}/>) )
-                } */}
             </div>
         </div>
   
@@ -100,7 +97,7 @@ const About = () => {
             >
                 {
                     clients?.map((item, idx) => (
-                    <SwiperSlide className='py-10 flex items-end'>
+                    <SwiperSlide key={idx} className='py-10 flex items-end'>
                         <div className='w-full aspect-square rounded-lg overflow-hidden bg-linkPanel flex items-center'>
                             <Image 
                                 src={item.image}
@@ -115,9 +112,6 @@ const About = () => {
                 }
                 
             </Swiper> 
-                {/* {
-                    testimonials?.map((item) => (<TestimonialCard data={item} setModalOpen={setModalOpen}/>) )
-                } */}
             </div>
         </div>
     </div>

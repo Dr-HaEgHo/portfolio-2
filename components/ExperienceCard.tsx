@@ -20,6 +20,7 @@ const ExperienceCard:FC<experienceProps> = ({data}) => {
             {
                 data?.map((item) => (
                     <Events
+                        key={item.id}
                         title={item.role}
                         subtitle={`${item.company}: ${item.startDate} - ${item.endDate}`}
                         startDate="2020/12/02"
