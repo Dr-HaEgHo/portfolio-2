@@ -1,9 +1,10 @@
 'use client'
-import About from "@/components/About";
+import About from "@/components/pages/About";
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
+import Resume from "@/components/pages/Resume";
 
 const links = [
   {id: 1, name: "About", route: 'about' },
@@ -38,10 +39,10 @@ export default function Home() {
   },[])
 
   return (
-    <main className="min-h-screen transition-700 text--colors_default bg--default">
+    <main className="min-h-screen  text--colors_default bg--default pb-[6rem]">
       <Navbar/>
       <div className="container">
-        <div className="w-full h-[80vh] min-h-[780px] flex items-start gap-[25px] relative">
+        <div className="w-full flex items-start gap-[25px] relative">
 
           {/* SIDEBAR */}
           <div className="flex-[1] h-full sticky top-0 min-h-[780px] max-h-[820px]">
@@ -49,20 +50,21 @@ export default function Home() {
           </div>
 
           {/* READER CONTAINER */}
-          <div className="flex-[3.2] h-full border transition-700 border--default bg--card rounded-[20px] relative">
+          <div className="flex-[3.2] max-w-full h-full border  border--default bg--card rounded-[20px] relative">
             {/* NAV MENU */}
             <div className="absolute top-0 right-0 flex justify-end">
-              <ul className="flex items-center gap link--panel transition-700 px-10 gap-[30px] border-b border-l rounded-bl-[20px] rounded-tr-[21px] border--default">
+              <ul className="flex items-center gap link--panel  px-10 gap-[30px] border-b border-l rounded-bl-[20px] rounded-tr-[21px] border--default">
                 {
                   links?.map((link) => (
-                    <li onClick={() => handleRouting(link.route)} className="py-5 px-[7px] cursor-pointer"><p className={`text--colors_default transition-700 font-medium text-[15px] ${link.route === route && 'text--colors_primary'}`}>{link.name}</p></li>
+                    <li onClick={() => handleRouting(link.route)} className="py-5 px-[7px] cursor-pointer"><p className={`text--colors_default  font-medium text-[15px] ${link.route === route && 'text--colors_primary'}`}>{link.name}</p></li>
                   ))
                 }
               </ul>
             </div>
 
             <div className="w-full p-[30px]" >
-                <About/>
+              { route === 'about' && <About/>}
+              { route === 'resume' && <Resume/>}
             </div>
           </div>
 

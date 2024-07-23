@@ -1,4 +1,4 @@
-import React from "react";
+import React, { SetStateAction } from "react";
 
 export interface emailInputProps {
     label: string,
@@ -174,4 +174,15 @@ export interface infoProps {
         hyperlink?: string;
         icon: React.ReactNode
     }
+}
+
+export interface expertiseProps{
+    data:{
+        id: number;
+        name: string;
+        description: string;
+        icon?: React.ReactNode;
+        photo?: string;
+    };
+    setModalOpen?: React.Dispatch<SetStateAction<boolean>>;
 }

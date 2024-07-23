@@ -12,6 +12,7 @@
     "iconsax-react": "^0.0.8",
     "ionicons": "^7.4.0",
     "next": "14.2.4",
+    "swiper": "^11.0.5",
     "react": "^18",
     "react-dom": "^18"
   },

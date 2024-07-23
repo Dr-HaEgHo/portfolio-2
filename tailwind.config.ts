@@ -27,7 +27,9 @@ const config: Config = {
         headerDark: "#d6d6d6b2",
         headerLight: "#",
         eerieDark: "#202022",
-        eerieLight: "#dddde800"
+        eerieLight: "#dddde800",
+        paraDark: '#D6d6d6',
+        paraLight: ''
       }
     },
   },

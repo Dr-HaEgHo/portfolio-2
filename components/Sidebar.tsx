@@ -22,7 +22,7 @@ const InfoComponent:FC<infoProps> = ({data}) => {
                 </div>
             </div>
             <div className='w-full flex flex-col items-start'>
-                <h4 className='text--header transition-700 text-xs caps'>{data.label}</h4>
+                <h4 className='text--header  text-xs caps'>{data.label}</h4>
                 { data.hyperlink && (<a href={data.hyperlink} className='text-ellipsis text-sm overflow-hidden max-w-[15ch]'>{data.detail}</a>)}
                 {!data.hyperlink && (<p className='text--colors_default text-sm text-ellipsis transition-[1400ms] overflow-hidden max-w-[15ch]'>{data.detail}</p>)}
             </div>
@@ -32,7 +32,7 @@ const InfoComponent:FC<infoProps> = ({data}) => {
 
 const Sidebar = () => {
   return (
-    <div className='bg--card transition-700 w-full h-full border--default border pt-[60px] p-[30px] rounded-[20px]'>
+    <div className='bg--card  w-full h-full border--default border pt-[60px] p-[30px] rounded-[20px]'>
        <div className='w-full flex flex-col items-center'>
          
          {/* PHOTO */}
@@ -60,7 +60,7 @@ const Sidebar = () => {
         </div>
 
         {/* DIVIDER */}
-        <div className='transition-700 border-b w-full my-8 border--default'/>
+        <div className=' border-b w-full my-8 border--default'/>
 
 
         {/* CONTACT INFORMATION */}
