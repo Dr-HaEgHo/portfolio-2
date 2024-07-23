@@ -46,7 +46,13 @@ export const education = [
     id: 1,
     school: "Obafemi Awolowo University",
     course: "Bachelor of Technology (BTech) Chemical Engineering",
-    duration: "2014 - 2018",
+    startDate: "Aug 2019",
+    endDate: "Feb 2023",
+    summary: [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit.", 
+        "Vel, nulla! Neque velit ab ipsa cumque, id iusto delectus in.",
+        "Sdfew erjef fferw rwerj wwwrtgj elrgfm erjm erjgm tisto reste"
+    ],
   },
 ];
 
@@ -54,10 +60,51 @@ export const experience = [
   {
     id: 1,
     company: "NeoLife Limited",
+    role: "Fullstack Developer - Node.Js",
     companyLocation: "Ile-Ife, Osun State, Nigeria",
     startDate: "Aug 2019",
     endDate: "Feb 2023",
-    summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, nulla! Neque velit ab ipsa cumque, id iusto delectus in commodi.",
+    summary: [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit.", 
+        "Vel, nulla! Neque velit ab ipsa cumque, id iusto delectus in.",
+        "Sdfew erjef fferw rwerj wwwrtgj elrgfm erjm erjgm tisto reste"
+    ],
+    stack: ["next", "react", "tailwindcss", "figma", "github"],
+  },
+  {
+    id: 2,
+    company: "NeoLife Limited",
+    role: "Fullstack Developer - Node.Js",
+    companyLocation: "Ile-Ife, Osun State, Nigeria",
+    startDate: "Aug 2019",
+    endDate: "Feb 2023",
+    summary: [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit.", 
+        "Vel, nulla! Neque velit ab ipsa cumque, id iusto delectus in.",
+        "Sdfew erjef fferw rwerj wwwrtgj elrgfm erjm erjgm tisto reste"
+    ],
+    stack: ["next", "react", "tailwindcss", "figma", "github"],
+  },
+  {
+    id: 3,
+    company: "NeoLife Limited",
+    role: "Fullstack Developer - Node.Js",
+    companyLocation: "Ile-Ife, Osun State, Nigeria",
+    startDate: "Aug 2019",
+    endDate: "Feb 2023",
+    summary: [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit.", 
+        "Vel, nulla! Neque velit ab ipsa cumque, id iusto delectus in.",
+        "Sdfew erjef fferw rwerj wwwrtgj elrgfm erjm erjgm tisto reste"
+    ],
     stack: ["next", "react", "tailwindcss", "figma", "github"],
   },
 ];
+
+
+export const skills = [
+    {id: 1, name: "Web Development", years: 1, percentage: 40},
+    {id: 2, name: "Web Development", years: 1, percentage: 60},
+    {id: 3, name: "Web Development", years: 1, percentage: 80},
+    {id: 4, name: "Web Development", years: 1, percentage: 90},
+]

@@ -186,3 +186,42 @@ export interface expertiseProps{
     };
     setModalOpen?: React.Dispatch<SetStateAction<boolean>>;
 }
+
+
+export interface experienceData {
+    id: number;
+    company: string;
+    role: string;
+    companyLocation: string;
+    startDate: string;
+    endDate: string
+    summary: string[];
+    stack: string[];
+}
+
+export type experienceProps = {
+    data: experienceData[]
+}
+export interface educationData {
+    id: number;
+    school: string;
+    course: string;
+    startDate: string;
+    endDate: string
+    summary?: string[];
+}
+
+export type educationProps = {
+    data: educationData[]
+}
+
+export interface skillsData {
+    id: number;
+    name: string;
+    years: number;
+    percentage: number;
+}
+
+export type skillsProps = {
+    data: skillsData[]
+}

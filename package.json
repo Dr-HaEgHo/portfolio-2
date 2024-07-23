@@ -12,9 +12,11 @@
     "iconsax-react": "^0.0.8",
     "ionicons": "^7.4.0",
     "next": "14.2.4",
-    "swiper": "^11.0.5",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-vertical-timeline-component": "^3.6.0",
+    "swiper": "^11.0.5",
+    "vertical-timeline-component-react": "^4.4.3"
   },
   "devDependencies": {
     "@types/node": "^20",

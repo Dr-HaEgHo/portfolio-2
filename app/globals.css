@@ -147,3 +147,7 @@ body{
 .swiper-scrollbar-drag {
   background: #9f1fef !important;
 }
+
+.only-number{
+  display: none !important;
+}
