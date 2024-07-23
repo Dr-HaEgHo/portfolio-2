@@ -38,7 +38,6 @@ export default function Home() {
   })
 
   return (
-    <Suspense>
       <main className="min-h-screen  text--colors_default bg--default pb-[6rem]">
       <Navbar/>
       <div className="container">
@@ -71,6 +70,5 @@ export default function Home() {
         </div>
       </div>
     </main>
-    </Suspense>
   );
 }
