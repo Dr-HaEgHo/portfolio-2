@@ -5,6 +5,8 @@ import Sidebar from "@/components/Sidebar";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense, useEffect, useState } from "react";
 import Resume from "@/components/pages/Resume";
+import Portfolio from "@/components/pages/Portfolio";
+import Contact from "@/components/pages/Contact";
 
 const links = [
   {id: 1, name: "About", route: 'about' },
@@ -52,10 +54,10 @@ export default function Home() {
           <div className="flex-[3.2] max-w-full h-full border  border--default bg--card rounded-[20px] relative">
             {/* NAV MENU */}
             <div className="absolute top-0 right-0 flex justify-end">
-              <ul className="flex items-center gap link--panel  px-10 gap-[30px] border-b border-l rounded-bl-[20px] rounded-tr-[21px] border--default">
+              <ul className="flex items-center gap link--panel  px-10 gap-[30px] border-b border-l rounded-bl-[20px] rounded-tr-[21px] border--default z-[999]">
                 {
                   links?.map((link) => (
-                    <li key={link.id} onClick={() => handleRouting(link.route)} className="py-5 px-[7px] cursor-pointer"><p className={`text--colors_default  font-medium text-[15px] ${link.route === route && 'text--colors_primary'}`}>{link.name}</p></li>
+                    <li key={link.id} onClick={() => handleRouting(link.route)} className="py-5 px-[7px] hoverActive cursor-pointer"><a className={`text--colors_default  font-medium text-[15px] ${link.route === route && 'text--colors_primary'}`}>{link.name}</a></li>
                   ))
                 }
               </ul>
@@ -64,6 +66,8 @@ export default function Home() {
             <div className="w-full p-[30px]" >
               { route === 'about' && <About/>}
               { route === 'resume' && <Resume/>}
+              { route === 'portfolio' && <Portfolio/>}
+              { route === 'contact' && <Contact/>}
             </div>
           </div>
 

@@ -225,3 +225,16 @@ export interface skillsData {
 export type skillsProps = {
     data: skillsData[]
 }
+
+export interface projectsData {
+    id: number;
+    name: string;
+    categories: string[];
+    category: string;
+    image: string;
+    link: string;
+}
+
+export type projectsProps = {
+    data: projectsData;
+}

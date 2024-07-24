@@ -49,9 +49,9 @@ export const education = [
     startDate: "Aug 2019",
     endDate: "Feb 2023",
     summary: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.", 
-        "Vel, nulla! Neque velit ab ipsa cumque, id iusto delectus in.",
-        "Sdfew erjef fferw rwerj wwwrtgj elrgfm erjm erjgm tisto reste"
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Vel, nulla! Neque velit ab ipsa cumque, id iusto delectus in.",
+      "Sdfew erjef fferw rwerj wwwrtgj elrgfm erjm erjgm tisto reste",
     ],
   },
 ];
@@ -65,9 +65,9 @@ export const experience = [
     startDate: "Aug 2019",
     endDate: "Feb 2023",
     summary: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.", 
-        "Vel, nulla! Neque velit ab ipsa cumque, id iusto delectus in.",
-        "Sdfew erjef fferw rwerj wwwrtgj elrgfm erjm erjgm tisto reste"
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Vel, nulla! Neque velit ab ipsa cumque, id iusto delectus in.",
+      "Sdfew erjef fferw rwerj wwwrtgj elrgfm erjm erjgm tisto reste",
     ],
     stack: ["next", "react", "tailwindcss", "figma", "github"],
   },
@@ -79,9 +79,9 @@ export const experience = [
     startDate: "Aug 2019",
     endDate: "Feb 2023",
     summary: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.", 
-        "Vel, nulla! Neque velit ab ipsa cumque, id iusto delectus in.",
-        "Sdfew erjef fferw rwerj wwwrtgj elrgfm erjm erjgm tisto reste"
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Vel, nulla! Neque velit ab ipsa cumque, id iusto delectus in.",
+      "Sdfew erjef fferw rwerj wwwrtgj elrgfm erjm erjgm tisto reste",
     ],
     stack: ["next", "react", "tailwindcss", "figma", "github"],
   },
@@ -93,18 +93,68 @@ export const experience = [
     startDate: "Aug 2019",
     endDate: "Feb 2023",
     summary: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.", 
-        "Vel, nulla! Neque velit ab ipsa cumque, id iusto delectus in.",
-        "Sdfew erjef fferw rwerj wwwrtgj elrgfm erjm erjgm tisto reste"
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Vel, nulla! Neque velit ab ipsa cumque, id iusto delectus in.",
+      "Sdfew erjef fferw rwerj wwwrtgj elrgfm erjm erjgm tisto reste",
     ],
     stack: ["next", "react", "tailwindcss", "figma", "github"],
   },
 ];
 
-
 export const skills = [
-    {id: 1, name: "Web Development", years: 1, percentage: 40},
-    {id: 2, name: "Web Development", years: 1, percentage: 60},
-    {id: 3, name: "Web Development", years: 1, percentage: 80},
-    {id: 4, name: "Web Development", years: 1, percentage: 90},
-]
+  { id: 1, name: "Web Development", years: 1, percentage: 40 },
+  { id: 2, name: "Web Development", years: 1, percentage: 60 },
+  { id: 3, name: "Web Development", years: 1, percentage: 80 },
+  { id: 4, name: "Web Development", years: 1, percentage: 90 },
+];
+
+export const projects = [
+  {
+    id: 1,
+    name: "Homechow",
+    category: "Web design",
+    categories: ["all","web-design", "web-development"],
+    image: require("../assets/image/homechow.png"),
+    link: "",
+  },
+  {
+    id: 1,
+    name: "Portfolio",
+    category: "Web development",
+    categories: ["all","web-design", "web-development"],
+    image: require("../assets/image/portfolio.png"),
+    link: "",
+  },
+  {
+    id: 1,
+    name: "Finance",
+    category: "Web development",
+    categories: ["all", "web-development"],
+    image: require("../assets/image/finance.jpg"),
+    link: "",
+  },
+  {
+    id: 1,
+    name: "Siesta",
+    category: "Web development",
+    categories: ["all", "web-development"],
+    image: require("../assets/image/siesta.png"),
+    link: "",
+  },
+  {
+    id: 1,
+    name: "Match",
+    category: "Mobile Application",
+    categories: ["all", "application"],
+    image: require("../assets/image/match.png"),
+    link: "",
+  },
+  {
+    id: 1,
+    name: "Luxury",
+    category: "Web Development",
+    categories: ["all", "web-development"],
+    image: require("../assets/image/luxury.png"),
+    link: "",
+  },
+];

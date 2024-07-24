@@ -18,6 +18,7 @@ const config: Config = {
         primary: "#9f1fef",
         accent: "#5d19e6",
         whiteBg: "#F5F7F9",
+        dullWhite: "#FAFAFA",
         blackBg: "#121212",
         greyBg: '#1e1e1f',
         lightGreyBg: '#ededed',
